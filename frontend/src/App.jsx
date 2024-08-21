@@ -8,7 +8,7 @@ function App() {
 
   useEffect(()=>{
     setInterval(()=>{
-      fetch("http://localhost:3000/todos")
+      fetch("https://todo-app-three-flame.vercel.app/todos")
       .then(async function (res){
         const json = await res.json();
         setTodos(json.todos)
